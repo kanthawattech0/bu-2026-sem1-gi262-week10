@@ -1,9 +1,11 @@
+using NUnit.Framework;
 using System;
 
 namespace MidtermExam.Prob04
 {
     public class NumberSearch
     {
+        
         /// <summary>ข้อ 04.1: ค้นหาตัวเลขด้วย Sequential Search จากต้น array ไปท้าย array</summary>
         /// <param name="values">array ที่อาจไม่เรียงลำดับ มีค่าซ้ำหรือตัวเลขติดลบได้</param>
         /// <param name="target">ค่าที่ต้องการค้นหา</param>

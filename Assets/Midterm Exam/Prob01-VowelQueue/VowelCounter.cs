@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 
@@ -10,6 +11,13 @@ namespace MidtermExam.Prob01
         /// (สมาชิกที่เข้าก่อนออกก่อน) และรักษาสมาชิกกับลำดับของคิวเดิม
         /// </summary>
         /// <param name="alphabets">
+        /// [TestCase(new string[] { }, 0)]
+        [TestCase(new[] { "a" }, 1)]
+        [TestCase(new[] { "a", "e", "i", "o", "u" }, 5)]
+        [TestCase(new[] { "a", "b", "e", "c", "i", "d", "o", "u" }, 5)]
+        [TestCase(new[] { "b", "c", "d", "f" }, 0)]
+        [TestCase(new[] { "a", "a", "a", "e", "e" }, 5)]
+        [TestCase(new[] { "A", null, "ae", "", " ", "u" }, 1)]
         /// คิวข้อความที่ต้องการตรวจ นับเฉพาะ "a", "e", "i", "o", "u" และนับตัวซ้ำทุกตัว
         /// ข้อความอื่น เช่น "A", "ae", ข้อความว่าง และสมาชิก null ไม่นับเป็นสระ
         /// </param>
@@ -22,7 +30,9 @@ namespace MidtermExam.Prob01
         /// </remarks>
         public int AS01_CountVowels(Queue<string> alphabets)
         {
-            // TODO: เขียนคำตอบแทนคำสั่ง throw exception ด้านล่าง
+
+        
+        
             throw new NotImplementedException();
         }
     }

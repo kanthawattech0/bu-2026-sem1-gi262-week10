@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 
@@ -16,7 +17,7 @@ namespace MidtermExam.Prob02
         private Stack<string> forwardHistory = new Stack<string>();
         // หน้าที่กำลังเปิดอยู่ แยกจากทั้งสอง Stack; ข้อความว่างหมายถึงยังไม่เคยเปิดหน้าเว็บ
         private string currentUrl = string.Empty;
-
+        
         /// <summary>เปิดหน้าเว็บใหม่ และปรับประวัติสำหรับการย้อนกลับและไปข้างหน้า</summary>
         /// <param name="url">
         /// URL ที่ต้องการเปิด ถ้าเป็น null, ข้อความว่าง หรือช่องว่างล้วน ให้ข้ามโดยไม่เปลี่ยนสถานะใด ๆ
@@ -51,8 +52,7 @@ namespace MidtermExam.Prob02
         /// </remarks>
         public void Forward()
         {
-            // TODO: เขียนคำตอบแทนคำสั่ง throw exception ด้านล่าง
-            throw new NotImplementedException();
+          
         }
 
         /// <summary>อ่าน URL ของหน้าปัจจุบัน โดยไม่เปลี่ยนหน้าหรือประวัติใด ๆ</summary>
